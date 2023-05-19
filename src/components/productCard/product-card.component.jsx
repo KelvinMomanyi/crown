@@ -13,10 +13,10 @@ const ProductCard=({product})=>{
     } 
     return(
         <div className='product-card-container'>
-             <img src={imageUrl} alt={`${name}`}/>
+             <img src={imageUrl} alt={`${name}`} style={{borderRadius:10}}/>
               <div className="footer">
                  <span className="name">{name}</span>
-                  <span className="price">{price}</span>
+                  <span className="price">${price}</span>
               </div>
               <Button buttonType='inverted' onClick={addProductToCart} >Add to Cart</Button>
        </div>      
