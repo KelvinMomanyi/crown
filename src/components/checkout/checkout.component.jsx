@@ -5,6 +5,9 @@ import CartItem from '../cart-item/cart-item.component'
 import { ProductsContext } from '../../contexts/categories.context'
 import './checkout.styles.scss'
 import CheckoutItem from '../checkout-item/checkout-item.component'
+import PaymentForm from '../payment-form/payment-form.component'
+
+
 
  const Checkout = () => {
    const {cartCount, setCartCount}  = useContext(CartContext)
@@ -40,7 +43,7 @@ import CheckoutItem from '../checkout-item/checkout-item.component'
       )}        
              
     <span className='total'>Total:${cartTotalPrice}</span>
-       
+      <PaymentForm/>  
     </div>
   )
 }
